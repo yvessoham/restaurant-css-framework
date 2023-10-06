@@ -10,25 +10,50 @@
 
 <body class="conteneur-fluid  text-center text-dark ">
        
-        <header class="col">
+    <header class="col">
 
-            <div class="row">
-                <img class="col-2" src="images/logo.jpeg" alt="logo" >
-                <img class="col-8" src="images/logo.gif">
-                <img class="col-2" src="images/logo.jpeg" alt="logo">
+        <div class="row">
+            <img class="col-2 col-md-2" src="images/logo.jpeg" alt="logo" >
+            <img class="col-8 col-md-8" src="images/logo.gif">
+            <img class="col-2 col-md-2" src="images/logo.jpeg" alt="logo">
+        </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: lightsalmon;">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"><img src="images/logo.jpeg" alt="" width="30"></span>
+            </button>
+        
+            <div class=" logo collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link text-danger" href="index.html">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-danger " href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-danger " href="pictures.html">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger " href="restaurant.html">Qui sommes-nous?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-danger " href="contact.html">Contact</a>
+                    </li>
+
+                  </ul>
             </div>
+        </div>
+    </nav>
 
-            <nav class="row">
-                <a class="col-3 bg-danger text-warning" style="border: 1px solid black" href="index.html"> Welcome</a>
-                <a class="col-3 bg-danger text-warning" style="border: 1px solid black" href="pictures.html"> Photos </a>
-                <a class="col-3 bg-danger text-warning" style="border: 1px solid black" href="restaurant.html"> Qui sommes-nous? </a>
-                <a class="col-3 bg-danger text-warning" style="border: 1px solid black" href="contact.html"> Contact & Réservations </a>
-            </nav>
-
-        </header>
+    </header>
 
         <section class="row">
-            <div class=" col-6">
+            <div class=" col-12 col-md-6">
                 <h2> Entrées</h2>
 
                 <ul class="list-group">
@@ -59,7 +84,7 @@
 
             </div>
 
-            <div class=" col-6">
+            <div class=" col-12 col-md-6">
                 <h2> Plats</h2>
 
                 <ul class="list-group">
@@ -91,7 +116,7 @@
                 </ul>
             </div>
 
-            <div class=" col-6">
+            <div class=" col-12 col-md-6">
                 <h2>Sauces/Légumes</h2>
 
                 <ul class="list-group">
@@ -123,7 +148,7 @@
                 </ul>
             </div>
             
-            <div class=" col-6">
+            <div class=" col-12 col-md-6">
                 <h2>Viandes/Poissons</h2>
 
                 <ul class="list-group">
@@ -155,7 +180,7 @@
                 </ul>
             </div>
 
-            <div class=" col-6">
+            <div class=" col-12 col-md-6">
                 <h2> Accompagnements</h2>
 
                 <ul class="list-group">
@@ -182,7 +207,7 @@
                 </ul>
             </div>
 
-            <div class=" col-6">
+            <div class=" col-12 col-md-6">
                 <h2>Desserts / Boissons</h2>
 
                 <ul class="list-group">
@@ -209,6 +234,7 @@
             </div>
         </section>
 
-    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 </body>
 </html>

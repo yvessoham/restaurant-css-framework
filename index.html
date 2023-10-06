@@ -6,47 +6,73 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <title>Welcome</title>
+    <script type="module" src="my-project/src/js/main.js"></script>
 </head>
 
 
 <body>
-     <div class="conteneur-fluid  text-center text-dark ">   
+     <div class="container-fluid  text-center text-dark " >   
         <header class="col">
 
             <div class="row">
-                <img class="col-2" src="images/logo.jpeg" alt="logo" >
-                <img class="col-8" src="images/logo.gif">
-                <img class="col-2" src="images/logo.jpeg" alt="logo">
+                <img class="col-3 col-md-3" src="images/logo.jpeg" alt="logo" >
+                <img class="col-6 col-md-6" src="images/logo.gif">
+                <img class="col-3 col-md-3" src="images/logo.jpeg" alt="logo">
             </div>
 
-            <nav class="row">
-                <a class="col-3 bg-danger text-warning" style="border: 1px solid black" href="menu.html"> Menu</a>
-                <a class="col-3 bg-danger text-warning" style="border: 1px solid black" href="pictures.html"> Photos </a>
-                <a class="col-3 bg-danger text-warning" style="border: 1px solid black" href="restaurant.html"> Qui sommes-nous? </a>
-                <a class="col-3 bg-danger text-warning" style="border: 1px solid black" href="contact.html"> Contact & Réservations </a>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: lightsalmon;">
+
+                <div class="container-fluid">
+                    <a class="navbar-brand" href=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon bg-light"><img src="images/logo.jpeg" alt="" width="30"></span>
+                    </button>
+                
+                    <div class=" logo collapse navbar-collapse" id="navbarNav">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link text-danger" href="index.html">Welcome</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-danger " href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-danger " href="pictures.html">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger " href="restaurant.html">Qui sommes-nous?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-danger " href="contact.html">Contact</a>
+                            </li>
+
+                          </ul>
+                    </div>
+                </div>
             </nav>
 
         </header>
 
 
-        <section class="row justify-content-between">
+        <section class="row justify-content-between" style="background-color: rgb(242, 165, 98);">
 
-        <aside class="col-2">
+        <aside class=" col-12 col-md-2">
             <video src="images/vid.mp4" autoplay loop muted width="300"></video>	
         </aside>
     
-        <div class="jumbotron col-6">
-            <h1 class="display-7 text-warning"> Bienvenue Au Fleuve Mono </h1>
+        <div class="jumbotron col-12 col-md-6">
+            <h1 class="display-7 text-danger"> Bienvenue Au Fleuve Mono </h1>
                 <p> Si vous êtes friands de plats d'Afrique de l'ouest plus specialement, du Togo, Vous êtes au bon endroit 
                     nous vous proposons toute une variété de produits. Notre spécialité est de cuisiner avec des produits frais. 
                     nous achetons nos produits après vos commandes pour garantir une fraicheur. Pour voir notre menu, cliquez sur Menu tout en haut. Vous pourrez aussi avoir un apercu de ce que nous faisons, nous contacter et réserver une fois que vous aurez parcouru notre menu. <br/>
                     <strong>Bonne dégustation ! </strong>  </p>
                     
-                    <img id="ensemble" src="images/togo.png" alt="images d'ensemble" width="400">
+                    <img id="ensemble" src="images/togo.png" alt="images d'ensemble" >
             
         </div>
 
-        <article class=" col-2 panel-default">
+        <article class=" col-12 col-md-2 panel-default">
 
             <span class="row">
                 <div class="panel-heading">
@@ -88,7 +114,7 @@
     
                 
     
-    <footer>
+    <footer style="background-color: lightsalmon;">
         <p>Copyright &copy; 2023 - Tous droits réservés </p>
     
     </footer>
