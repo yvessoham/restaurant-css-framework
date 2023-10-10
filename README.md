@@ -1,11 +1,16 @@
 # Restaurant-css-framework 
 
+Bienvenue Au Fleuve Mono
+![Logo!](images/logo.gif "logo")
+
 ## Projet réalisé par Yves Bolong
 
  il s'agit d'un site web a propos de la franchise d'un restaurant.
 Commencé le 03/10 à l'occosion d'un projet solo avec BeCode
 
-Le lien vers mon restaurant [Au Fleuve Mono]  (https://yvessoham.github.io.restaurant-css-framework/)
+Le lien vers mon restaurant [Au Fleuve Mono]  (https://yvessoham.github.io/restaurant-css-framework/)
+
+
 
 ## Technologies utilisées 
 
