@@ -20,9 +20,13 @@
                 <img class="col-3 col-md-3" src="images/logo.jpeg" alt="logo">
             </div>
 
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(23, 19, 19);">
+            <nav class=" row navbar navbar-expand-lg navbar-light fixed-top justify-content-between" style="background-color: rgb(23, 19, 19);">
 
-                <div class="container-fluid">
+                <div class="col col-md text-danger">
+                    Au Fleuve Mono
+                </div>
+
+                <div class="container-fluid col col-md">
                     <a class="navbar-brand" href=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon bg-light"><img src="images/logo.jpeg" alt="" width="30"></span>
@@ -57,11 +61,11 @@
 
         <section class="row justify-content-between" style="background-color:  rgb(116, 228, 116);">
 
-        <aside class=" col-12 col-md-2">
+        <aside class=" col-12 col-sm-12  col-md-2">
             <video src="images/vid.mp4" autoplay loop muted width="300"></video>	
         </aside>
     
-        <div class="jumbotron col-12 col-md-6">
+        <div class="jumbotron col-sm-12 col-12  col-md-6">
             <h1 class="display-7 text-danger"> Bienvenue Au Fleuve Mono </h1>
                 <p> Si vous êtes friands de plats d'Afrique de l'ouest plus specialement, du Togo, Vous êtes au bon endroit 
                     nous vous proposons toute une variété de produits. Notre spécialité est de cuisiner avec des produits frais. 
@@ -72,7 +76,7 @@
             
         </div>
 
-        <aside class="col-md-2 p-3">
+        <aside class="col-md-2 col-sm-12  p-3">
             <figure>
             <img src="images/fleuve mono.jpg" alt="" height="400" width="200">
             <figcaption><p>il s'agit là du fleuve mono d'où tire le nom du restaurant. il fait reference aux origines principales de notre cuisine</p></figcaption>
@@ -90,7 +94,7 @@
 
         <div class=" row panel-default justify-content-around" style="background-color:  rgb(116, 228, 116);">
 
-            <span class="col-12 col-md-4" style="border: 5px solid rgb(24, 63, 24); border-radius: 10%;">
+            <span class="col-12  col-sm-12 col-md-4" style="border: 5px solid rgb(24, 63, 24); border-radius: 10%;">
                 <div class="panel-heading">
                     <h3 class="panel-title" > Promos</h3>
                 </div>
@@ -101,7 +105,7 @@
 
             </span>
 
-            <span class="col-12 col-md-4" style="border: 5px solid rgb(24, 63, 24); border-radius: 10%;"> 
+            <span class="col-12  col-sm-12 col-md-4" style="border: 5px solid rgb(24, 63, 24); border-radius: 10%;"> 
             
    
             <div class="panel panel-default">
@@ -130,8 +134,44 @@
         <p>Copyright &copy; 2023 - Tous droits réservés </p>
     
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     </div>
+    <div id="cookie-banner" class="alert alert-info text-center mb-0 fixed-top" role="alert" >
+        Ce site utilise des cookies. <a href="#" onclick="accepterCookies()">J'accepte</a>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+    <script>
+        function accepterCookies() {
+         
+          document.cookie = "accepteCookies=true; expires=" + new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000).toUTCString() + "; path=/";
+      
+         
+          var cookieBanner = document.getElementById("cookie-banner");
+          cookieBanner.style.display = "none";
+      }
+      
+      
+      window.onload = function() {
+          var accepteCookies = getCookie("accepteCookies");
+          var cookieBanner = document.getElementById("cookie-banner");
+          if (!accepteCookies) {
+              cookieBanner.style.display = "block";
+          } else {
+              cookieBanner.style.display = "block";
+          }
+      }
+      
+      
+      function getCookie(name) {
+          var value = "; " + document.cookie;
+          var parts = value.split("; " + name + "=");
+          if (parts.length == 2) return parts.pop().split(";").shift();
+      }
+      
+      </script>
+         
 </body>
     
 
